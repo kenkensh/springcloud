@@ -1,0 +1,23 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+logging:
+  level: 
+    org.springframework.cloud.gateway: true
+    org.springframework.http.serever.reactive: debug
+    org.springframework.web.reactive: debug
+    reactor.ipc.netty: debug
+    
+eureka:
+  client:
+    service-url:
+      defaultZone: http://admin:admin@node1:8100/eureka/
+    register-with-eureka: true
+    fetch-registry: true
