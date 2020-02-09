@@ -7,6 +7,7 @@ spring:
     username: guest
     password: guest
     virtualHost: /
+    publisherConfirms: true
 server:
   port: 9999
 eureka:
