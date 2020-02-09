@@ -10,7 +10,7 @@ spring:
           enabled: true
 logging:
   level: 
-    org.springframework.cloud.gateway: true
+    org.springframework.cloud.gateway: trace
     org.springframework.http.serever.reactive: debug
     org.springframework.web.reactive: debug
     reactor.ipc.netty: debug
