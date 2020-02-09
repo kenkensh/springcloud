@@ -24,4 +24,4 @@ management:
       exposure:
         include: refresh,health,info,bus-refresh
 data:
- message: test2
+ message: test3
