@@ -1,6 +1,13 @@
 spring:
   application:
     name: test
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+    virtualHost: /
+    publisherConfirms: true
 server:
   port: 9999
 eureka:
@@ -16,6 +23,6 @@ management:
   endpoints:
     web:
       exposure:
-        include: refresh,health, info
+        include: refresh,health,info,bus-refresh
 data:
- message: test3
+ message: test2
