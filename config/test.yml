@@ -11,3 +11,9 @@ eureka:
       enabled: true
     service-url:
       defaultZone: http://admin:admin@node1:8100/eureka/
+      
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh,health, info
