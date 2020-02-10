@@ -2,6 +2,7 @@ spring:
   datasource:
     druid:
       url: jdbc:mysql://localhost:3306/blogdb?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+      driver-class-name: com.mysql.jdbc.Driver
       username: root
       password: Dell@123
       stat-view-servlet:
