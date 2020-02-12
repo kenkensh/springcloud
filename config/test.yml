@@ -9,7 +9,7 @@ spring:
     virtualHost: /
     publisherConfirms: true
 server:
-  port: 9998
+  port: 9999
 eureka:
   client:
     register-with-eureka: true
@@ -25,4 +25,4 @@ management:
       exposure:
         include: refresh,health,info,bus-refresh
 data:
- message: test12
+ message: test11
